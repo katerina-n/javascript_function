@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+</head>
+<body>
+<script>
+    function plus(a, b){
+        var summa=a+b;
+        return summa;
+
+    }
+    function minus(a, b) {
+        if (a >= b) {
+            var raznica = a-b;
+
+        }
+        else{
+            raznica=b-a;
+
+        }
+        return raznica;
+    }
+    function multi(a,b){
+        var multipli=a*b;
+        return multipli;
+    }
+
+    function division(a,b){
+        if(b!=0) {
+            var divis=a/b;
+            return divis;
+                }
+                else{
+            return "Error";
+        }
+    }
+    document.write(plus(5,6)+"<br>");
+document.write(minus(777,10)+"<br>");
+document.write(multi(4,35)+"<br>");
+document.write(division(5,10)+"<br>");
+
+    </script>
+</body>
+</html>

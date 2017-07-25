@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers</title>
+</head>
+<body>
+<script>
+    function numbers(a) {
+        a=prompt("Введите значение");
+        document.write("Вы введи число "+a+"<br>");
+        if (a >= 0) {
+            document.write( "Положительное число<br>");
+        }
+        else {
+            document.write( "Число отрицательное<br>");
+        }
+        var count=0;
+        if (a > 1) {
+            for (var i = 2; i <= Math.sqrt(a); i++){
+                if(a%i==0){
+                    count++;
+                }
+            }
+            if(count>=1){
+               document.write("Сложное число <br>");
+            }
+            else{
+                document.write("Простое число <br>");
+            }
+
+                }
+                else{
+            if(a==1){
+                document.write ("Простое число  <br>");
+
+            }
+            else{
+                document.write("Число отрицательное "+a+"<br>");
+
+            }
+        }
+
+        if(a%2==0){
+            document.write("Число делится на 2<br>");
+        }
+        else{
+            document.write("Не делится на 2<br>");
+        }
+        if(a%5==0){
+            document.write("Делится на 5<br>");
+        }
+        else{
+            document.write("Не делится на 5<br>");
+        }
+        if(a%3==0){
+            document.write("Делится на 3<br>");
+        }
+        else{
+            document.write("Не делится на 3<br>");
+        }
+        if(a%6==0){
+            document.write("Делится на 6<br>");
+        }
+        else{
+            document.write("Не делится на 6<br>");
+        }
+        if(a%9==0){
+            document.write("Делится на 9<br>");
+        }
+        else{
+            document.write("Не делится на 9<br>");
+        }
+
+    }
+    numbers(6);
+    </script>
+
+</body>
+</html>

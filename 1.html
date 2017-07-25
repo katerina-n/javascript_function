@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate</title>
+</head>
+<body>
+<script>
+    var ch1=prompt("Введите первое число");
+    var ch2=prompt("Введите второе число");
+    var ch3=prompt("Введите третье число");
+    var a=Number(ch1);
+    var b=Number(ch2);
+    var c=Number(ch3);
+    if((a!=NaN)&&(b!=NaN)&&(c!=NaN)){
+    var midl=(a+b+c)/3;
+        document.write("Среднее арифметическое чисел "+a+" и "+b+" и "+c+" = "+midl);
+
+    }
+    else{
+        document.write("Ошибка ввода");
+    }
+    </script>
+</body>
+</html>
